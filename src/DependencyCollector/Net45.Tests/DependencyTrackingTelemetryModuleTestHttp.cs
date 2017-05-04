@@ -15,10 +15,10 @@
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     /// <summary>
-    /// DependencyTrackingTelemetryModule .Net 4.6 specific tests. 
+    /// DependencyTrackingTelemetryModule .Net 4.5 and Net 4.6 specific HTTP tests. 
     /// </summary>
     [TestClass]
-    public class DependencyTrackingTelemetryModuleTestNet46
+    public class DependencyTrackingTelemetryModuleTestHttp
     {
         private const string IKey = "F8474271-D231-45B6-8DD4-D344C309AE69";
         private const string FakeProfileApiEndpoint = "http://www.microsoft.com";
