@@ -176,7 +176,7 @@
             string actualSdkVersion = itemToValidate.tags[new ContextTagKeys().InternalSdkVersion];
 
             var prefix = itemToValidate.data.baseData.type == "Http" ? ExpectedHttpSDKPrefix : ExpectedSqlSDKPrefix;
-            Assert.IsTrue(actualSdkVersion.Contains(prefix), string.Format("Actual version: {0}, Expected prefix: {1}", actualSdkVersion, DeploymentAndValidationTools.ExpectedSDKPrefix));
+            Assert.IsTrue(actualSdkVersion.Contains(prefix), string.Format("Actual version: {0}, Expected prefix: {1}", actualSdkVersion, prefix));
 
             if (!resultCodeExpected.Equals("DontCheck"))
             {

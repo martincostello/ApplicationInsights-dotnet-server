@@ -107,7 +107,7 @@
         {
             EnsureDotNetCoreInstalled();
 
-            return new ExpectedSDKPrefixChanger("rdddsc");
+            return new ExpectedSDKPrefixChanger("rdddsc", "");
         }
 
         private const string AspxCoreTestAppFolder = "..\\TestApps\\AspxCore\\";
@@ -155,17 +155,23 @@
 
         private class ExpectedSDKPrefixChanger : IDisposable
         {
-            private readonly string previousExpectedSDKPrefix;
+            private readonly string previousExpectedHttpSDKPrefix;
+            private readonly string previousExpectedSqlSDKPrefix;
 
-            public ExpectedSDKPrefixChanger(string expectedSDKPrefix)
+            public ExpectedSDKPrefixChanger(string expectedHttpSDKPrefix, string expectedSqlSDKPrefix)
             {
-                previousExpectedSDKPrefix = DeploymentAndValidationTools.ExpectedSDKPrefix;
-                DeploymentAndValidationTools.ExpectedSDKPrefix = expectedSDKPrefix;
+                previousExpectedHttpSDKPrefix = DeploymentAndValidationTools.ExpectedHttpSDKPrefix;
+                DeploymentAndValidationTools.ExpectedHttpSDKPrefix = expectedHttpSDKPrefix;
+
+                previousExpectedSqlSDKPrefix = DeploymentAndValidationTools.ExpectedSqlSDKPrefix;
+                DeploymentAndValidationTools.ExpectedSqlSDKPrefix = expectedSqlSDKPrefix;
+
             }
 
             public void Dispose()
             {
-                DeploymentAndValidationTools.ExpectedSDKPrefix = previousExpectedSDKPrefix;
+                DeploymentAndValidationTools.ExpectedHttpSDKPrefix = previousExpectedHttpSDKPrefix;
+                DeploymentAndValidationTools.ExpectedSqlSDKPrefix = previousExpectedSqlSDKPrefix;
             }
         }
     }
