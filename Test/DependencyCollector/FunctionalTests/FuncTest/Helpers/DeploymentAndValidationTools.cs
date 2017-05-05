@@ -81,7 +81,7 @@
                             else
                             {
                                 Trace.TraceInformation("Detected Status Monitor as not installed, ExpectedPrefix: rddf");
-                                ExpectedSDKPrefix = "rddf";
+                                ExpectedSDKPrefix = "rdddsd";
                             }                                                        
                         }
                         else
