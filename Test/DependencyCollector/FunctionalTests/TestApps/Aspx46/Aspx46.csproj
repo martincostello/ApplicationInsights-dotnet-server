@@ -7,13 +7,13 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{53EFF9D6-5515-492E-8BDB-184E5DBFDBB1}</ProjectGuid>
+    <ProjectGuid>{2D9143A9-DA87-4CFB-A69A-271BA1ED85D9}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Aspx451</RootNamespace>
-    <AssemblyName>Aspx451</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>Aspx46</RootNamespace>
+    <AssemblyName>Aspx46</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -41,7 +41,7 @@
     </Reference>
     <Reference Include="Microsoft.ApplicationInsights">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\packages\Microsoft.ApplicationInsights.2.4.0-beta3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\packages\Microsoft.ApplicationInsights.2.4.0-beta3\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -70,7 +70,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\..\packages\System.Diagnostics.DiagnosticSource.4.4.0-preview2-25305-01\lib\net45\System.Diagnostics.DiagnosticSource.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\packages\System.Diagnostics.DiagnosticSource.4.4.0-preview2-25305-01\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http" />
@@ -253,9 +253,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58882</DevelopmentServerPort>
+          <DevelopmentServerPort>58883</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58882/</IISUrl>
+          <IISUrl>http://localhost:58883/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

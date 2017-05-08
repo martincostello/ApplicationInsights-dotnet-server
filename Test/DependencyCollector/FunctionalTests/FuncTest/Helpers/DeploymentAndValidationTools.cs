@@ -36,6 +36,8 @@
 
         public static int AspxCorePort = 791;
 
+        public static int Aspx46Port = 792;
+
         private static readonly object lockObj = new object();
 
         private static bool isInitialized;
@@ -83,7 +85,7 @@
                             }
                             else
                             {
-                                Trace.TraceInformation("Detected Status Monitor as not installed, ExpectedPrefix: rdddsd");
+                                Trace.TraceInformation("Detected Status Monitor as not installed, ExpectedHttpPrefix: rdddsd, ExpectedSqlPrefix: rddf");
                                 ExpectedHttpSDKPrefix = "rdddsd";
                                 ExpectedSqlSDKPrefix = "rddf";
 

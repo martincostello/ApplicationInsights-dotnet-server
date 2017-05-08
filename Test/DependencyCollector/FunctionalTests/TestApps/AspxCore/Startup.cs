@@ -44,8 +44,6 @@ namespace AspxCore
             loggerFactory.AddDebug();
 
             app.UseMvc();
-
-            new DependencyTrackingTelemetryModule().Initialize(TelemetryConfiguration.Active);
         }
     }
 }
